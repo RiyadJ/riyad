@@ -1,0 +1,33 @@
+:local {
+  .custom_scrollbar {
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: var(--trackBg);
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: var(--thumbBg);
+      border-radius: 3px;
+    }
+
+    &.isMobile {
+      &::-webkit-scrollbar {
+        width: undefined;
+      }
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: undefined;
+      }
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: undefined;
+      }
+    }
+  }
+}

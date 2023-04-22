@@ -1,0 +1,36 @@
+:local .custom_scrollbar {
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* Track */
+  /* Handle */
+}
+
+:local .custom_scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+:local .custom_scrollbar::-webkit-scrollbar-track {
+  background: var(--trackBg);
+}
+
+:local .custom_scrollbar::-webkit-scrollbar-thumb {
+  background: var(--thumbBg);
+  border-radius: 3px;
+}
+
+:local .custom_scrollbar.isMobile {
+  /* Track */
+  /* Handle */
+}
+
+:local .custom_scrollbar.isMobile::-webkit-scrollbar {
+  width: undefined;
+}
+
+:local .custom_scrollbar.isMobile::-webkit-scrollbar-track {
+  background: undefined;
+}
+
+:local .custom_scrollbar.isMobile::-webkit-scrollbar-thumb {
+  background: undefined;
+}
